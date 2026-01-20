@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: var(--bg-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.tradeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tradeItem {
+  border-bottom: 1px solid var(--border-default);
+  padding: var(--space-3) 0;
+}
+
+.tradeHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--font-medium);
+  margin-bottom: var(--space-1);
+}
+
+.notes {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.empty {
+  font-style: italic;
+  color: var(--text-muted);
+}

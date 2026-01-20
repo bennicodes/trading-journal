@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.dateSelectors {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.selectorText {
+  cursor: pointer;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.selectorText:hover {
+  background-color: var(--bg-elevated);
+}
+
+.selected {
+  background-color: var(--bg-elevated);
+  font-weight: var(--font-bold);
+}
+
+.dropdownWrapper {
+  position: relative; /* for absolute dropdown */
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  max-height: 200px; /* fixed height */
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: var(--space-1);
+  min-width: 80px;
+}
+
+/* This ensures dropdown items stay inside the box and scroll */
+.dropdownItem {
+  padding: var(--space-1) var(--space-2);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.dropdownItem:hover {
+  background-color: var(--bg-elevated);
+}
