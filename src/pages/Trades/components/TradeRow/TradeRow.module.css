@@ -1,0 +1,7 @@
+.win {
+  color: var(--color-success);
+}
+
+.loss {
+  color: var(--color-error);
+}

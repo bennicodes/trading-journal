@@ -1,0 +1,5 @@
+.app {
+    min-height: 100vh;
+    padding: var(--space-8);
+    background: var(--bg-main);
+  }

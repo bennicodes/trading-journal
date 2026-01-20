@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--border-default);
+  text-align: left;
+}
+
+th {
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-elevated);
+  cursor: pointer;
+}
+
+.empty {
+  color: var(--text-muted);
+  padding: var(--space-4);
+  font-style: italic;
+}
